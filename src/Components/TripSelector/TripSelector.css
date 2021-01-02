@@ -1,0 +1,87 @@
+.trip-selector-wrapper {
+    display: flex;
+    position: absolute;
+    height: 6em;
+    align-self: center;
+    width: 60%;
+    bottom: -3em;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    overflow: hidden;
+
+    -webkit-box-shadow: 12px 13px 21px -6px rgba(0,0,0,0.31);
+    box-shadow: 12px 13px 21px -6px rgba(0,0,0,0.31);
+}
+
+.trip-selector-wrapper .group-btn {
+  flex:1;
+  padding: 1.5em 0 1.5em 0em;
+}
+
+
+.trip-selector-wrapper .group-btn.first{
+  padding: 1.5em 0 1.5em 1em;
+}
+
+.trip-selector-wrapper .group-btn.last{
+  padding: 1.5em 1em 1.5em 0;
+}
+
+.trip-selector-wrapper .group-btn div {
+  border: #5c5c5c80 0.5px solid;
+}
+
+.trip-selector-wrapper .group-btn div:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.trip-selector-wrapper .group-btn div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  color: #5c5c5c80;
+}
+
+.trip-selector-wrapper .group-btn.first div {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: #5c5c5c80 0.5px solid;
+  border-right: 0;
+}
+
+.trip-selector-wrapper .group-btn.last div {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: #5c5c5c80 0.5px solid;
+  border-left: 0;
+  color: #f5f5f5F2;
+  font-weight: 500;
+  justify-content: center;
+  background-color: tomato;
+}
+
+
+@media (max-width: 991.98px) {
+
+  .trip-selector-wrapper {
+    height: 4em;
+    bottom: -2em;
+    width: 98%;
+  }
+
+  .trip-selector-wrapper .group-btn {
+    padding: 0.5em 0 0.5em 0em;
+  }
+
+  .trip-selector-wrapper .group-btn.first{
+    padding: 0.5em 0 0.5em 0.5em;
+  }
+
+  .trip-selector-wrapper .group-btn.last{
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+
+}
